@@ -14,23 +14,35 @@
       </div>
       <form action="#" method="POST" id="form">
         <table class="contact" id="table">
-          <tbody><tr class="contact_line">
+          <tbody>
+          <tr class="contact_line">
             <td class="contact_sign"><label for="name">お名前</label></td>
-            <td class="contact_input"><input type="text" name="name" id="name"></td>
+            <td class="contact_input">
+              <input type="text" name="name" id="name">
+            </td>
           </tr>
           <tr class="contact_line">
             <td class="contact_sign"><label for="name">Eメール</label></td>
-            <td class="contact_input"><input type="email" name="email" id="email"></td>
+            <td class="contact_input">
+              <input type="email" name="email" id="email">
+            </td>
           </tr>
           <tr class="contact_line">
-            <td class="contact_sign"><label for="name">Eメール(確認)</label></td>
-            <td class="contact_input"><input type="email" name="email_confirm" id="email_confirm" class="alert_bg"></td>
+            <td class="contact_sign"><label for="name">Eメール(確認)</label>
+            </td>
+            <td class="contact_input">
+              <input type="email" name="email_confirm" id="email_confirm">
+            </td>
           </tr>
-          <p id="alert" class="alert_color">Eメールが一致しません</p><tr class="contact_content" id="content_field">
+          <tr class="contact_contenr" id="content
+          _field">
             <td class="contact_sign"><label for="content">内容</label></td>
-            <td class="contact_input"><textarea name="content" id="content"></textarea></td>
+            <td class="contact_input">
+              <textarea name="content" id="content"></textarea>
+            </td>
           </tr>
-        </tbody></table>
+        </tbody>
+      </table>
         <div class="contact_btn_area">
           <button type="reset" class="contact_btn reset_btn">リセット</button>
           <button type="submit" class="contact_btn submit_btn">送信する</button>

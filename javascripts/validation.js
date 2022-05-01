@@ -8,18 +8,18 @@ function emailValidation() {
   element.setAttribute('id', 'alert');
   element.classList.add("alert_color");
   emailComfirmField.addEventListener('input', e => {
-    if(form.email.value !== form.email_confirm.value) {
-      if (!document.getElementById('alert')) {
-        contentField.parentNode.insertBefore(element, contentField);
-        emailComfirmField.classList.add("alert_bg");
-      }
+    if (form.email.value !== form.email_confirm.value) {
+      emailComfirmField.classList.add("alert_bg");
+        if (!document.getElementById('alert')) {
+          contentField.parentNode.insertBefore(element, contentField);
+        }
     } else {
+      document.getElementById('alert').remove()
       emailComfirmField.classList.remove("alert_bg");
-      element.parentNode.removeChild(element);
     }
   });
 };
 
-window.onload = function() {
+window.onload = function () {
   emailValidation();
 };
